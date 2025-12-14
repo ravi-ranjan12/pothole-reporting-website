@@ -455,6 +455,7 @@ app.get("/otp-status/:phoneNumber", (req, res) => {
 // Serve uploaded images
 app.use("/uploads", express.static("uploads"));
 
+// Start server (Local / Render)
 const PORT = process.env.PORT || 3000;
 
 if (require.main === module) {
@@ -463,6 +464,5 @@ if (require.main === module) {
     });
 }
 
-}
-
 module.exports = app;
+
