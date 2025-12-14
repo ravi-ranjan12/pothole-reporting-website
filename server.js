@@ -455,11 +455,14 @@ app.get("/otp-status/:phoneNumber", (req, res) => {
 // Serve uploaded images
 app.use("/uploads", express.static("uploads"));
 
-// Start server (Local) or Export (Vercel)
+const PORT = process.env.PORT || 3000;
+
 if (require.main === module) {
-    app.listen(3000, () => {
-        console.log("🚀 Server running on http://localhost:3000");
+    app.listen(PORT, () => {
+        console.log(`🚀 Server running on port ${PORT}`);
     });
+}
+
 }
 
 module.exports = app;
