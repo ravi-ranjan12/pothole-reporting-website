@@ -582,3 +582,46 @@ body {
   position: relative;
   z-index: 2;
 }
+
+/* MOBILE OPTIMIZATIONS */
+@media (max-width: 600px) {
+  .report-main {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  main {
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  .file-upload-wrapper {
+    height: 100px;
+  }
+
+  .otp-input-wrapper {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .otp-input-wrapper input,
+  #otpInput {
+    min-width: 0 !important;
+    flex: 1 !important;
+    width: 100% !important;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .verify-btn,
+  #verifyOtpBtn {
+    width: 100% !important;
+    padding: 12px !important;
+    margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

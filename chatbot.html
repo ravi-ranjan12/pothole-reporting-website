@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
             margin: 50px auto;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
 
@@ -93,7 +94,7 @@
             background: white;
             padding: 15px 20px;
             border-radius: 18px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             position: relative;
         }
 
@@ -118,12 +119,25 @@
             animation: typing 1.4s infinite;
         }
 
-        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
-        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
 
         @keyframes typing {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-10px); }
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
         }
 
         .quick-questions {
@@ -233,6 +247,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="chatbot-container">
         <div class="chatbot-header">
@@ -269,13 +284,15 @@
         </div>
 
         <div class="chat-input-area">
-            <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here..." onkeypress="handleKeyPress(event)">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here..."
+                onkeypress="handleKeyPress(event)">
             <button class="send-btn" onclick="sendMessage()">
                 <i class="fas fa-paper-plane"></i>
             </button>
         </div>
     </div>
 
-    <script src="js/chatbot.js"></script>
+    <script src="js/chatbot.js?v=2"></script>
 </body>
+
 </html>

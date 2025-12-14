@@ -70,7 +70,7 @@ app.post("/submit", upload.single("image"), (req, res) => {
 // Admin credentials and officers data
 const ADMIN_CREDENTIALS = {
     username: "admin",
-    password: "admin123",
+    password: "potholeadmin123",
     role: "super_admin"
 };
 
@@ -162,7 +162,7 @@ app.get("/admin/officers", (req, res) => {
 // Legacy login endpoint for backward compatibility
 app.post("/login", (req, res) => {
     const { username, password } = req.body;
-    if (username === "admin" && password === "admin123") {
+    if (username === "admin" && password === "potholeadmin123") {
         const token = generateToken(ADMIN_CREDENTIALS);
         res.json({ success: true, token: token });
     } else {

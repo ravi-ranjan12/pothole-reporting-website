@@ -149,7 +149,7 @@ class SmartPotholesChatbot {
             📝 <strong>Status Updates</strong> - Update repair progress<br>
             💬 <strong>Admin Messages</strong> - Communicate with users<br>
             📈 <strong>Analytics</strong> - Performance metrics<br><br>
-            Access: <strong>/admin-login.html</strong> (admin/admin123) 🔑`;
+            Access: <strong><a href="admin-login.html">Admin Login Portal</a></strong> 🔑`;
         }
 
         // Contact information
@@ -275,6 +275,6 @@ function handleKeyPress(event) {
 }
 
 // Initialize chatbot when page loads
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     window.chatbot = new SmartPotholesChatbot();
 });
