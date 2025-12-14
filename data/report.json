@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1764400427325,
+    "name": "John Doe",
+    "phone": "9876543210",
+    "location": "MG Road, Bangalore",
+    "image": "uploads/sample-image.jpg",
+    "date": "2025-11-29T10:00:00.000Z",
+    "status": "Working",
+    "notes": [
+      {
+        "text": "Report received and assigned to our road maintenance team. We will start work within 24 hours.",
+        "timestamp": "2025-11-29T10:30:00.000Z",
+        "type": "admin_update"
+      },
+      {
+        "text": "Thank you for helping make our roads safer!",
+        "timestamp": "2025-11-29T11:00:00.000Z",
+        "type": "admin_update"
+      }
+    ],
+    "lastModified": "2025-11-29T11:00:00.000Z",
+    "assignedOfficer": {
+      "id": 1,
+      "name": "Rajesh Kumar",
+      "department": "Road Maintenance"
+    },
+    "assignedDate": "2025-11-29T10:30:00.000Z"
+  },
+  {
+    "id": 1764400427326,
+    "name": "Jane Smith",
+    "phone": "9123456789",
+    "location": "Brigade Road, Bangalore",
+    "image": "uploads/sample-image2.jpg",
+    "date": "2025-11-29T09:00:00.000Z",
+    "status": "Resolved",
+    "notes": [
+      {
+        "text": "Pothole repair completed successfully. Road surface has been restored to proper condition.",
+        "timestamp": "2025-11-29T14:00:00.000Z",
+        "type": "admin_update"
+      }
+    ],
+    "lastModified": "2025-11-29T14:00:00.000Z",
+    "assignedOfficer": {
+      "id": 2,
+      "name": "Priya Sharma",
+      "department": "Infrastructure"
+    },
+    "assignedDate": "2025-11-29T09:30:00.000Z"
+  }
+]

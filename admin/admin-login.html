@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - SmartPotholes</title>
+    <link rel="stylesheet" href="admin/admin-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="admin-login-wrapper">
+        <div class="admin-login-container">
+            <a href="../index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+
+            <div class="admin-header">
+                <h1><i class="fas fa-shield-alt"></i> Admin Portal</h1>
+                <p>SmartPotholes Management System</p>
+            </div>
+
+            <form id="adminLoginForm" class="admin-form">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Admin Username" required autocomplete="username">
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password" onclick="showForgotPassword()">
+                        <i class="fas fa-key"></i> Forgot Password?
+                    </a>
+                </div>
+
+                <button type="submit" class="admin-btn" id="loginBtn">
+                    <i class="fas fa-sign-in-alt"></i> Access Dashboard
+                </button>
+
+                <div id="message" class="message"></div>
+            </form>
+
+            <div class="security-info">
+                <h4><i class="fas fa-info-circle"></i> Security Notice</h4>
+                <p>This portal is restricted to authorized personnel only. All login attempts are monitored and logged for security purposes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div id="forgotPasswordModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 30px; border-radius: 15px; max-width: 400px; width: 90%; text-align: center;">
+            <h3 style="margin-bottom: 20px; color: var(--admin-primary);">Reset Password</h3>
+            <p style="margin-bottom: 20px; color: #64748b;">Contact your system administrator to reset your password.</p>
+            <button onclick="closeForgotPassword()" style="padding: 10px 20px; background: var(--admin-primary); color: white; border: none; border-radius: 8px; cursor: pointer;">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+    </div>
+
+    <script src="admin/admin-login.js"></script>
+</body>
+
+</html>
